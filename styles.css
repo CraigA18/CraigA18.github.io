@@ -1,5 +1,4 @@
 h1 {
-  font-family: sans-serif;
   font-size: 70px;
   color: #3498DB;
   text-align: center;
@@ -7,16 +6,20 @@ h1 {
 
 h2 {
   font-size: 35px;
+  text-align: center;
 }
 
 body {
   background-color: #E0E0E0;
+  font-family: 'Copperplate';
 }
 
 p {
   color: #333;
+  font-size: 25px;
 }
 
+/* Navigation Menu  */
 .nav {
   display: flex;
   justify-content: center;
@@ -42,4 +45,25 @@ p {
 
 .nav ul li a:hover {
   color: #F39C12;
+}
+
+/* INDEX - Key Terms Secion */ 
+.key-terms-section .content-wrapper{
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.terms-list {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pwa-arch-image {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+
 }
