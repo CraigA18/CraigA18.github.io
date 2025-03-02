@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav>
+
+    <nav class="nav">
       <ul>
         <li><a href="index.html"> HOME </a></li>
         <li><a href="features.html"> FEATURES </a></li>        
@@ -14,5 +15,57 @@
       </ul>
   </nav>
 
+  <header><h1> Core Features of Progressive Web Apps</h1></header>
+
+  <main>
+    <h2> Installation Like Native Apps </h2>
+    <p> PWA's can be added to a devices home screen, just like native apps. 
+      this is enabled by the Web App Manifest, which defines app metadata (name,
+      icons, theme colors). Users get a seamnless experience with no app store downloads 
+      required.
+    </p>
+
+    <h2> Offline Functionality </h2>
+    <p> Service workers act as a proxy between the app and the netwrok, caching critical 
+      resources via the Caceh API. This allows PWAs to work offline or on loq quality connections, 
+      ensuring uninterrupted access. 
+    </p>
+
+    <h2> Engagement with Push Alerts</h2>
+    <p> PWAs can send push notifications (with user permission) to re engage audiences. These 
+      alerts appear even when the app isnt active, mirroring native app behavior.
+    </p>
+
+    <h2> Speed & Efficiency  </h2>
+    <p> Caching strategies such as cache first or network first and background sync ensure fast
+      load times. Resrouces are stored locally, reducing server dependency and improving responsiveness. 
+    </p>
+
+    <!-- Features Table -->
+    <table border="1"> 
+      <tr>
+        <th> Feature </th>
+        <th> Key Benefit  </th>
+      </tr>
+      <tr>
+        <td> Service Workers </td>
+        <td> Enable Offline Functionality </td>
+      </tr>
+      <tr>
+        <td> Web App Manifest </td>
+        <td> Allows Installation & controls UI </td>
+      </tr>
+      <tr>
+        <td> Cache API </td>
+        <td> Boosts Load Speed </td>
+      </tr>
+      <tr>
+        <td> Background Sync </td>
+        <td> Updates data when online </td>
+      </tr>
+    </table>
+
+
+  </main>
   </body>
 </html>
