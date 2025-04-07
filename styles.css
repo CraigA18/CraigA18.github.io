@@ -1,28 +1,27 @@
+/* General Styles */
+body {
+  background-color: #E0E0E0;
+  font-family: 'Copperplate', serif;
+  margin: 20px;
+}
+
 h1 {
-  font-size: 70px;
   color: #3498DB;
   text-align: center;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 1.75em;
   text-align: center;
-}
-
-body {
-  background-color: #E0E0E0;
-  font-family: 'Copperplate';
-}
-
-p {
   color: #333;
-  font-size: 25px;
 }
+
 strong {
   color: #F39C12;
 }
 
-/* Navigation Menu  */
+/* Navigation Menu */
 .nav {
   display: flex;
   justify-content: center;
@@ -35,7 +34,6 @@ strong {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
 }
 
 .nav ul li a {
@@ -44,14 +42,15 @@ strong {
   font-size: 20px;
   padding: 10px 15px;
   border-radius: 5px;
+  transition: color 0.3s ease;
 }
 
 .nav ul li a:hover {
   color: #F39C12;
 }
 
-/* INDEX - Key Terms Secion */ 
-.key-terms-section .content-wrapper{
+/* INDEX - Key Terms Section */
+.key-terms-section .content-wrapper {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
@@ -70,10 +69,9 @@ strong {
   flex: 1;
   max-width: 100%;
   height: auto;
-
 }
 
-/* FEATURES - Table  */ 
+/* FEATURES - Table */
 .features-table {
   width: 100%;
   border-collapse: collapse;
@@ -88,7 +86,7 @@ strong {
 
 .features-table th {
   font-weight: bold;
-  color:#3498DB
+  color: #3498DB;
 }
 
 .benefits-list {
@@ -103,4 +101,90 @@ strong {
   text-align: center;
   list-style: none;
   font-size: 40px;
+}
+
+/* Quiz Styles */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.question {
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: #333;
+}
+
+.question legend {
+  font-size: 30px;
+  color: #3498DB;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  font-size: 22px;
+  padding: 10px;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+label {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+label:hover {
+  color: #F39C12;
+}
+
+.result {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 40px;
+  display: none;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.wrong {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  padding: 15px 25px;
+  margin-top: 15px;
+  background-color: #3498DB;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2874A6;
 }

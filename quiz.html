@@ -1,0 +1,67 @@
+<!-- PWA Quiz -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html"> HOME </a></li>
+        <li><a href="features.html"> FEATURES </a></li>        
+        <li><a href="benefits.html"> BENEFITS </a></li>        
+        <li><a href="References.html"> REFERENCES </a></li>
+        <li><a href="quiz.html"> QUIZ </a></li>      
+      </ul>
+  </nav>
+
+  <header><h1> Progressive Web App Quiz </h1></header>
+
+  <main>
+    <form id="quizForm">
+      <div class="question">
+        <legend> 1. What does PWA stand for </legend>
+        <label><input type="radio" name="q1" value="a"> Portable Web App </label><br>
+        <label><input type="radio" name="q1" value="b"> Progressive Web Applications </label><br>
+        <label><input type="radio" name="q1" value="c"> Proframmable Web App </label><br>
+      </div>
+
+      <div class="question">
+        <legend> 2. Which of the following is required for a website to qualify as a PWA? </legend>
+        <label><input type="radio" name="q2" value="a"> Native API Integration </label><br>
+        <label><input type="radio" name="q2" value="b"> Manifest File </label><br>
+        <label><input type="radio" name="q2" value="c"> WebAssembly </label><br>
+      </div>
+
+      <div class="question">
+        <legend> 3. What file helps PWAs install on home screen? </legend>
+        <label><input type="radio" name="q3" value="a"> app.js </label><br>
+        <label><input type="radio" name="q3" value="b"> manifest.json </label><br>
+        <label><input type="radio" name="q3" value="c"> index.html </label><br>
+      </div>
+
+      <div class="question">
+        <legend> 4. What JavaScript file enables offline access in PWAs?  </legend>
+        <input type="text" name="q4" placeholder="Type your answer here"><br>
+      </div>
+
+      <div class="question">
+        <legend> 5. Which of the following are benfits of PWAs? (Select all that apply) </legend>
+        <label><input type="checkbox" name="q5" value="a"> Offline Access </label><br>
+        <label><input type="checkbox" name="q5" value="b"> NAtive only Device support </label><br>
+        <label><input type="checkbox" name="q5" value="c"> Home screen installation </label><br>
+        <label><input type="checkbox" name="q5" value="d"> Push Notifications </label><br>
+      </div>
+
+      <button type="submit"> Submit Quiz </button>
+      <button type="button" onclick="resetQuiz()"> Restart Quiz </button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+    <script src="js/quiz.js"></script>
+    
+  </main>
+
+  </body>
+</html>
