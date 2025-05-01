@@ -1,12 +1,13 @@
-<!-- Features of PWA's -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
+    <!-- Navigation Menu -->
     <nav class="nav">
       <ul>
         <li><a href="index.html"> HOME </a></li>
@@ -15,59 +16,77 @@
         <li><a href="References.html"> REFERENCES </a></li>      
         <li><a href="quiz.html"> QUIZ </a></li>  
       </ul>
-  </nav>
+    </nav>
 
-  <header><h1> Core Features of Progressive Web Apps</h1></header>
+    <header>
+      <h1> Core Features of Progressive Web Apps</h1>
+    </header>
 
-  <main>
-    <p><strong> Installation Like Native Apps </strong></p>
-    <p> PWA's can be added to a devices home screen, just like native apps. 
-      this is enabled by the Web App Manifest, which defines app metadata (name,
-      icons, theme colors). Users get a seamnless experience with no app store downloads 
-      required.
-    </p>
+    <!-- Main content section -->
+    <main>
+      
+      <!-- Section on Installation Like Native Apps -->
+      <p><strong> Installation Like Native Apps </strong></p>
+      <p>
+        PWAs can be added to a device's home screen, just like native apps. This is enabled by the Web App Manifest, 
+        which defines app metadata such as name, icons, and theme colors. Users get a seamless experience with no app store downloads required.
+      </p>
 
-   <p><strong> Offline Functionality </strong></p>
-    <p> Service workers act as a proxy between the app and the netwrok, caching critical 
-      resources via the Caceh API. This allows PWAs to work offline or on loq quality connections, 
-      ensuring uninterrupted access. 
-    </p>
+      <!-- Section on Offline Functionality -->
+      <p><strong> Offline Functionality </strong></p>
+      <p>
+        Service workers act as a proxy between the app and the network, caching critical resources via the Cache API. 
+        This allows PWAs to work offline or on low-quality connections, ensuring uninterrupted access.
+      </p>
 
-  <p> <strong>Engagement with Push Alerts</strong></p>
-    <p> PWAs can send push notifications (with user permission) to re engage audiences. These 
-      alerts appear even when the app isnt active, mirroring native app behavior.
-    </p>
+      <!-- Section on Engagement through Push Alerts -->
+      <p><strong>Engagement through Push Alerts</strong></p>
+      <p>
+        PWAs can send push notifications (with user permission) to re-engage audiences. These alerts appear even when the app isn't active, 
+        mirroring native app behavior.
+      </p>
 
- <p><strong> Speed & Efficiency  </strong> </p> 
-    <p> Caching strategies such as cache first or network first and background sync ensure fast
-      load times. Resrouces are stored locally, reducing server dependency and improving responsiveness. 
-    </p>
+      <!-- Section on Speed & Efficiency -->
+      <p><strong> Speed & Efficiency  </strong> </p> 
+      <p>
+        Caching strategies such as cache-first or network-first and background sync ensure fast load times. 
+        Resources are stored locally, reducing server dependency and improving responsiveness.
+      </p>
 
-    <!-- Features Table -->
-    <table class="features-table"> 
-      <tr>
-        <th> Feature </th>
-        <th> Key Benefit  </th>
-      </tr>
-      <tr>
-        <td> Service Workers </td>
-        <td> Enable Offline Functionality </td>
-      </tr>
-      <tr>
-        <td> Web App Manifest </td>
-        <td> Allows Installation & controls UI </td>
-      </tr>
-      <tr>
-        <td> Cache API </td>
-        <td> Boosts Load Speed </td>
-      </tr>
-      <tr>
-        <td> Background Sync </td>
-        <td> Updates data when online </td>
-      </tr>
-    </table>
+      <!-- Features Table to highlight key features and benefits -->
+      <table class="features-table"> 
+        <tr>
+          <!-- Table headers for features and their key benefits -->
+          <th> Feature </th>
+          <th> Key Benefit  </th>
+        </tr>
+        <tr>
+          <!-- Row displaying feature and its benefit -->
+          <td> Service Workers </td>
+          <td> Enable Offline Functionality </td>
+        </tr>
+        <tr>
+          <!-- Row displaying feature and its benefit -->
+          <td> Web App Manifest </td>
+          <td> Allows Installation & controls UI </td>
+        </tr>
+        <tr>
+          <!-- Row displaying feature and its benefit -->
+          <td> Cache API </td>
+          <td> Boosts Load Speed </td>
+        </tr>
+        <tr>
+          <!-- Row displaying feature and its benefit -->
+          <td> Background Sync </td>
+          <td> Updates data when online </td>
+        </tr>
+      </table>
 
+    </main>
 
-  </main>
+    <footer>
+      <p>&copy; 2025 PWA's. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>

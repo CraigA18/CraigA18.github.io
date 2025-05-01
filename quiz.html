@@ -1,11 +1,13 @@
-<!-- PWA Quiz -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+  
+    <!-- Navigation Menu -->
     <nav class="nav">
       <ul>
         <li><a href="index.html"> HOME </a></li>
@@ -14,55 +16,73 @@
         <li><a href="References.html"> REFERENCES </a></li>
         <li><a href="quiz.html"> QUIZ </a></li>      
       </ul>
-  </nav>
+    </nav>
 
-  <header><h1> Progressive Web App Quiz </h1></header>
+    <header>
+      <h1> Progressive Web App Quiz </h1>
+    </header>
 
-  <main>
-    <form id="quizForm">
-      <div class="question">
-        <legend> 1. What does PWA stand for </legend>
-        <label><input type="radio" name="q1" value="a"> Portable Web App </label><br>
-        <label><input type="radio" name="q1" value="b"> Progressive Web Applications </label><br>
-        <label><input type="radio" name="q1" value="c"> Proframmable Web App </label><br>
-      </div>
+    <!-- Main content section for the quiz -->
+    <main>
+      <!-- Start of the quiz form -->
+      <form id="quizForm">
+      
+        <!-- Question 1 -->
+        <div class="question">
+          <legend> 1. What does PWA stand for? </legend>
+          <label><input type="radio" name="q1" value="a"> Portable Web App </label><br>
+          <label><input type="radio" name="q1" value="b"> Progressive Web Applications </label><br>
+          <label><input type="radio" name="q1" value="c"> Programmable Web App </label><br>
+        </div>
 
-      <div class="question">
-        <legend> 2. Which of the following is required for a website to qualify as a PWA? </legend>
-        <label><input type="radio" name="q2" value="a"> Native API Integration </label><br>
-        <label><input type="radio" name="q2" value="b"> Manifest File </label><br>
-        <label><input type="radio" name="q2" value="c"> WebAssembly </label><br>
-      </div>
+        <!-- Question 2 -->
+        <div class="question">
+          <legend> 2. Which of the following is required for a website to qualify as a PWA? </legend>
+          <label><input type="radio" name="q2" value="a"> Native API Integration </label><br>
+          <label><input type="radio" name="q2" value="b"> Manifest File </label><br>
+          <label><input type="radio" name="q2" value="c"> WebAssembly </label><br>
+        </div>
 
-      <div class="question">
-        <legend> 3. What file helps PWAs install on home screen? </legend>
-        <label><input type="radio" name="q3" value="a"> app.js </label><br>
-        <label><input type="radio" name="q3" value="b"> manifest.json </label><br>
-        <label><input type="radio" name="q3" value="c"> index.html </label><br>
-      </div>
+        <!-- Question 3 -->
+        <div class="question">
+          <legend> 3. What file helps PWAs install on the home screen? </legend>
+          <label><input type="radio" name="q3" value="a"> app.js </label><br>
+          <label><input type="radio" name="q3" value="b"> manifest.json </label><br>
+          <label><input type="radio" name="q3" value="c"> index.html </label><br>
+        </div>
 
-      <div class="question">
-        <legend> 4. What JavaScript file enables offline access in PWAs?  </legend>
-        <input type="text" name="q4" placeholder="Type your answer here"><br>
-      </div>
+        <!-- Question 4 -->
+        <div class="question">
+          <legend> 4. What JavaScript file enables offline access in PWAs? </legend>
+          <input type="text" name="q4" placeholder="Type your answer here"><br>
+        </div>
 
-      <div class="question">
-        <legend> 5. Which of the following are benfits of PWAs? (Select all that apply) </legend>
-        <label><input type="checkbox" name="q5" value="a"> Offline Access </label><br>
-        <label><input type="checkbox" name="q5" value="b"> NAtive only Device support </label><br>
-        <label><input type="checkbox" name="q5" value="c"> Home screen installation </label><br>
-        <label><input type="checkbox" name="q5" value="d"> Push Notifications </label><br>
-      </div>
+        <!-- Question 5 -->
+        <div class="question">
+          <legend> 5. Which of the following are benefits of PWAs? (Select all that apply) </legend>
+          <label><input type="checkbox" name="q5" value="a"> Offline Access </label><br>
+          <label><input type="checkbox" name="q5" value="b"> Native-only Device support </label><br>
+          <label><input type="checkbox" name="q5" value="c"> Home screen installation </label><br>
+          <label><input type="checkbox" name="q5" value="d"> Push Notifications </label><br>
+        </div>
 
-      <button type="submit"> Submit Quiz </button>
-      <button type="button" onclick="resetQuiz()"> Restart Quiz </button>
-    </form>
+        <!-- Submit button for the quiz -->
+        <button type="submit"> Submit Quiz </button>
+        <button type="button" onclick="resetQuiz()"> Restart Quiz </button>
+      </form>
 
-    <div class="result" id="result"></div>
+      <!-- Div to display the quiz result -->
+      <div class="result" id="result"></div>
 
-    <script src="js/quiz.js"></script>
+      <!-- JavaScript file for handling the quiz logic -->
+      <script src="js/quiz.js"></script>
     
-  </main>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 PWA's. All rights reserved.</p>
+    </footer>
 
   </body>
 </html>
